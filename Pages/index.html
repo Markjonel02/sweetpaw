@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample</title>
+    <link rel="stylesheet" href="/Css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/src/img/clinic.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+ 
+</head>
+<body>
+
+    <header class="heading">
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+    <h1>Sweet Paw</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#gallery">Gallery</a></li> 
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+        <div class="toggleWrapper">
+            <input type="checkbox" class="dn" id="dn">
+            <label for="dn" class="toggle">
+                <span class="toggle__handler">
+                    <span class="crater crater--1"></span>
+                    <span class="crater crater--2"></span>
+                    <span class="crater crater--3"></span>
+                </span>
+                <span class="star star--1"></span>
+                <span class="star star--2"></span>
+                <span class="star star--3"></span>
+                <span class="star star--4"></span>
+                <span class="star star--5"></span>
+                <span class="star star--6"></span>
+            </label>
+        </div>
+       
+    </header>
+    <main class="main-content">
+        <section class="video-sect" >
+            <video width="100%" height="50%" autoplay loop muted  class="video">
+                 <source src="/src/video/will you....mp4" type="video/ogg">
+              </video>
+        </section>
+        <section class="products">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="card-animation-cont">
+                        <!-- Duplicate the following div to add cards -->
+                        <div class="card">
+                          <img src="https://picsum.photos/id/556/1080/1200" alt="" />
+                          <div class="info">
+                            <strong>Lorem Ipsum</strong>
+                            <span class="sub-title">Dolor sit amet</span>
+                            <hr />
+                            <div class="hide-info">
+                              <span class="text"
+                                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                commodo nulla mauris, eget tincidunt felis bibendum sit amet.
+                                <a href="#">Learn More</a>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                    </div>  
+                  </div>
+                  
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+        </section>
+        <section id="gallery">
+  <div class="grid-container" id="imageGrid" data-aos="fade-right"  data-aos-delay="150" data-aos-duration="1000">
+    <!-- Images will be added dynamically using JavaScript -->
+  </div>
+        </section>
+        <section class="banner" id="">
+            <!--  <span>join us now</span>-->
+            <h3 data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000">Sweet Paw health & wellness</h3>
+            <!--<a href="#" class="btn">get discount</a>-->
+            <p  data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000"> We Live By The Principle That health and wellness are essential aspects of leading a fulfilling and balanced life.</p>
+        </section>
+    </main>
+ 
+    <footer class="footer">  
+             <!-- footer section starts  -->
+        <div class="box-container" data-aos="150" data-aos-duration="1000">
+            <div class="box">
+                <h3>opening hours</h3>
+                <p> monday : <i> 7:00am - 10:30pm </i> </p>
+                <p> tuesday : <i> 7:00am - 10:30pm </i> </p>
+                <p> wednesday : <i> 7:00am - 10:30pm </i> </p>
+                <p> friday : <i> 7:00am - 10:30pm </i> </p>
+                <p> saturday : <i> 7:00am - 10:30pm </i> </p>
+                <p> sunday : <i> closed </i> </p>
+            </div>
+            <div class="box">
+                <h3>Contact</h3>
+                <p> <i class="fas fa-phone"></i> (+63) 12312313123</p>
+                <p> <i class="fas fa-envelope"></i> sweetpaw@gmail.com </p>
+                <p> <i class="fas fa-map"></i> Blk 123 lot 45 greenhills Sub. Cainta-Rizal</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                </div>
+            </div>
+    </footer>
+    <!-- js link -->
+    <script src="/Js/script.js"></script>
+    <!-- other cdn links -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://kit.fontawesome.com/70c682a6d6.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
+</html>
