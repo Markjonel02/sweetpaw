@@ -55,7 +55,7 @@ body{
     background-color: var(--secondary);
 }
 .heading {
-    padding: 10px 10px 10px;
+    padding: 10px;
     background-color: var(--primary);
     display: flex;
     justify-content: space-between;
@@ -66,7 +66,7 @@ body{
     box-shadow: 1px 1px 10px -1px rgba(150, 150, 150, 0.13)
 }
 .sticky{
-    position: sticky; /*change this to fixed  */
+    position: fixed; 
     top: 0;
     left: 0;
     right: 0;
@@ -126,120 +126,24 @@ color: var(--secondary);
     justify-content: center;
     align-items: center;
  }
- .about-sec{
-    display: flex;
-    padding: 2%;
-    background-color: var(--dtertiarycolor);
-    flex-wrap: wrap;
- }
- /* swiper */
- 
- /* main */
- section{
-    margin: 0 0 2rem;
- }
- /* blog */
- /* Customize this CSS based on your design preferences */
- .grid-container {
-   display: grid;
-   grid-template-columns: repeat(5,1fr); /* Default: 3 images per row */
-   gap: 10px; /* Gap between grid items */
-   padding: 0 10px;
-   box-shadow: 1px 1px 10px -1px rgba(150, 150, 150, 0.13)
- }
- .grid-container img {
-   display: flex;
-   flex-wrap: wrap;
-   width: 100%; /* Initially, set the image width to 100% */
-   height: auto;
- }
- .grid-container img:hover {
-   opacity: 0.5; /* Set the image opacity to 0.5 */
- }
- /* About */
- /* banner */
- .banner {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/src/img/milli-2l0CWTpcChI-unsplash.jpg) no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/src/img/milli-2l0CWTpcChI-unsplash.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    text-align: center;
- }
- .banner h3 {
-    padding-top: 5rem;
-    color: var(--secondary);
-    text-transform: uppercase;
-    font-size: 4rem;
- }
- .banner p {
-    margin: 1rem auto;
-    max-width: 60rem;
-    font-size: 2.5rem;
-    color: #aaa;
-    line-height: 2;
- }
- /* footer */
- footer{
-    margin: 100px;
-}
-.footer .box-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
-}
-.footer .box-container .box h3 {
-    display: flex;
-    font-size: 2rem;
-    color: var(--tertiary);
-    padding: 1rem 1rem;
-    text-transform: capitalize;
-}
-.footer .box-container .box .links {
-    display: flex;
-    font-size: 1.5rem;
-    display: block;
-    color: var(--tertiary);
-    padding: 2rem 0;
-}
-.footer .box-container .box .links:hover {
-    color: var(--primary);
-}
-.footer .box-container .box p {
-    font-size: 20px;
-    color: var(--tertiary);
-    padding: 1rem 0;
-}
-.footer .box-container .box p i {
-    padding-right: .5rem;
-    color:var(--primary);
-}
-.footer .box-container .box .share {
-    padding: 1rem 0;
-}
-.footer .box-container .box .share a {
-    height: 3.5rem;
-    width: 3.5rem;
-    line-height: 3.5rem;
-    font-size: 1.7rem;
-    color: var(--secondary);
-    background: var(--tertiary);
-    border-radius: 50%;
-    margin-right: .5rem;
-    text-align: center;
-}
-.footer .box-container .box .share a:hover {
-    background: var(--primary);
-}
 
-#gallery{
-margin-top: 50px;
-}
+ 
+ /* swiper  */
+  swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px 0  0;
+    padding: 0 0 50px ;  
+
+
+  }
 
 .card-animation-cont {
-    gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
   }
   
   .card-animation-cont .card {
@@ -320,7 +224,7 @@ margin-top: 50px;
     transition: 0.3s;
   }
   .card-animation-cont .card .hide-info a:hover {
-    color: #5549f1;
+    color: var(--dsecondarycolor);
   }
   
   .card-animation-cont .card:hover > .info {
@@ -336,30 +240,125 @@ margin-top: 50px;
     opacity: 1;
     transform: translateY(0);
   }
-  
+ /* image-grid */
+ .grid-container {
+   display: grid;
+   grid-template-columns: repeat(5,1fr); /* Default: 3 images per row */
+   gap: 10px; /* Gap between grid items */
+   padding: 10px  10px;
+   box-shadow: 1px 1px 10px -1px rgba(150, 150, 150, 0.13);  
+ }
+ .grid-container img {
+   display: flex;
+   flex-wrap: wrap;
+   width:100%; /* Initially, set the image width to 100% */
+   height: auto;
+ }
+ .grid-container img:hover {
+   opacity: 0.5; /* Set the image opacity to 0.5 */
+ }
+ 
+#gallery{
+  margin-top: 50px;
+  }
+ /* About */
+ /* banner */
+ .banner {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/src/img/milli-2l0CWTpcChI-unsplash.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/src/img/milli-2l0CWTpcChI-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+ }
+ .banner h3 {
+    padding-top: 5rem;
+    color: var(--secondary);
+    text-transform: uppercase;
+    font-size: 4rem;
+ }
+ .banner p {
+    margin: 1rem auto;
+    max-width: 60rem;
+    font-size: 2.5rem;
+    color: #aaa;
+    line-height: 2;
+ }
 
-
-
+/* menu-btn for show when reach smaller screen */
 .menu-btn {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 5px;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
 }
 
 .btn-line {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 3px;
-    transition: transform 0.3s ease;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px;
+  transition: transform 0.3s ease;
 }
-
-
+ /* footer */
+ footer{
+    margin: 100px;
+}
+.footer .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+.footer .box-container .box h3 {
+    display: flex;
+    font-size: 2rem;
+    color: var(--tertiary);
+    padding: 1rem 1rem;
+    text-transform: capitalize;
+}
+.footer .box-container .box .links {
+    display: flex;
+    font-size: 1.5rem;
+    display: block;
+    color: var(--tertiary);
+    padding: 2rem 0;
+}
+.footer .box-container .box .links:hover {
+    color: var(--primary);
+}
+.footer .box-container .box p {
+    font-size: 20px;
+    color: var(--tertiary);
+    padding: 1rem 0;
+}
+.footer .box-container .box p i {
+    padding-right: .5rem;
+    color:var(--primary);
+}
+.footer .box-container .box .share {
+    padding: 1rem 0;
+}
+.footer .box-container .box .share a {
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+    font-size: 1.7rem;
+    color: var(--secondary);
+    background: var(--tertiary);
+    border-radius: 50%;
+    margin-right: .5rem;
+    text-align: center;
+}
+.footer .box-container .box .share a:hover {
+    background: var(--primary);
+}
 @media only screen and (max-width: 830px) {
-    .card-animation-cont {
-      flex-direction: column;
-    }
+  .swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
   }
 /* media queries for responsive design */
 @media screen and (max-width: 877px){
@@ -373,13 +372,18 @@ margin-top: 50px;
     
 }
 @media (max-width: 570px) {
-    
     .toggleWrapper{
         visibility:hidden;
         float: right;
     }
     .menu-btn {
         display: flex;
+    }
+    .nav ul li a {
+display: block;
+justify-content: center;
+align-items: center;
+flex-direction: column;
     }
     .nav {
         display: none;
@@ -390,17 +394,20 @@ margin-top: 50px;
         display: block;
         flex-direction: row;
     }
-
     .menu-btn.active .btn-line:nth-child(1) {
         transform: translate(0, 12px) rotate(-45deg);
     }
-
     .menu-btn.active .btn-line:nth-child(2) {
         opacity: 0;
     }
-
     .menu-btn.active .btn-line:nth-child(3) {
         transform: translate(0, -6px) rotate(45deg);
-        
+    }
+    .card-animation-cont {
+        flex-direction: row;
+      }
+    .swiper-wrapper {
+      display: flex;
+      flex-direction: column;
     }
 }

@@ -88,7 +88,7 @@ window.addEventListener('resize', createImageGrid);
 // JavaScript to toggle the visibility of the navigation menu when burger menu is clicked
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.nav');
-
+//for menuber 
 menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('active');
     menu.classList.toggle('active');
