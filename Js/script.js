@@ -60,6 +60,8 @@ function createImageGrid() {
  
     // Add more image paths as needed
   ];
+
+  
   // Clear existing content (in case this function is called multiple times)
   gridContainer.innerHTML = '';
 
@@ -78,7 +80,7 @@ function createImageGrid() {
   images.forEach(imagePath => {
     const imgElement = document.createElement('img');
     imgElement.src = imagePath;
-    imgElement.alt = 'Image';
+    imgElement.alt = 'Dog image';
     gridContainer.appendChild(imgElement);
   });
 }
@@ -93,3 +95,4 @@ menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('active');
     menu.classList.toggle('active');
 });
+
